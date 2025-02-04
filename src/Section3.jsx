@@ -1,19 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import Img26 from './assets/img26.webp'
-const Section1 = () => {
+import Img31 from './assets/img31.jpeg'
+const Section3 = () => {
   return (
-    < div style={{  background:'#f5f5f5'
+    <FirstBox style={{  background:'#f5f5f5'
     }}>
-    <Heading>
-    <Wrapper>
-        <ThirdColor3 />
-        <FirstColor1 />
-        <SecondColor2 />
-      </Wrapper>
-      <h1>WHY ELITE AUTO LAB <span style={{color:'red'}}>?</span></h1>
-    </Heading>
-    <FirstBox>
       <Text>
      
  <span>   <h1> P E R F E C T I O N</h1>
@@ -25,41 +16,14 @@ At Elite Auto Lab, we're obsessed with perfection. Our expert team is dedicated 
         <ThirdColor />
         <FirstColor />
         <SecondColor />
-</HeaderWrapper>
-      <Boxes><img src={Img26} alt="" /></Boxes>
+
+      </HeaderWrapper>
+      <Boxes><img src={Img31} alt="" /></Boxes>
       </BoxesCont> 
        </FirstBox>
-       </div>
+
   )
 }
-
-const Wrapper = styled.div`
-  display: flex;
-  height: 3px;
-width: 70px;
-margin-left: 2rem;
-margin-bottom: 3px;
-`;
-const FirstColor1 = styled.div`
-  width: 32.33%;
-  background-color: #ffffff;
-  transform: skewX(-50deg);
-  transform-origin: left;
-`;
-
-const SecondColor2 = styled.div`
-  width: 32.33%;
-  background-color: red;
-  transform: skewX(-50deg);
-  transform-origin: left;
-`;
-
-const ThirdColor3 = styled.div`
-  width: 32.33%;
-  background-color: green;
-  transform: skewX(-50deg);
-  transform-origin: right;
-`;
 const FirstBox = styled.div `
   width: 100%;
   height: 280px;
@@ -68,13 +32,7 @@ const FirstBox = styled.div `
   justify-content: center;
 
 `
-const Heading = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-margin-top:2rem;
-  flex-direction: column;
-`
+
 const HeaderWrapper = styled.div`
   display: flex;
   height: 3px;
@@ -108,7 +66,7 @@ const Text = styled.div`
   span h1{
     width: 160px;
     display: block;
-    color: red;
+    color: green;
     font-weight: 800;
     font-size: large;
   }
@@ -139,4 +97,4 @@ img {
 }
 `;
 
-export default Section1
+export default Section3
