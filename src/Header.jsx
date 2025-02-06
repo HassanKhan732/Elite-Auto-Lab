@@ -1,6 +1,13 @@
 import styled from "styled-components";
 import { FaPhoneAlt } from "react-icons/fa"; // For the phone icon
 import logo from './assets/logo.jpg';
+
+const mainContainer = styled.body`
+  margin:0;
+  padding:0px;
+  box-sizing:border-box;
+
+`
 const HeaderWrapper = styled.div`
   display: flex;
   height: 17px;
@@ -108,7 +115,7 @@ const ContactInfo = styled.div`
 
 function Header() {
   return (
-    <>
+    <mainContainer>
       {/* First Header */}
       <HeaderWrapper>
         <FirstColor />
@@ -120,27 +127,27 @@ function Header() {
       <SecondHeader>
         {/* Logo */}
         <div className="left">
-        <Logo src={logo} alt="Logo" />
-<span className="span">Elite Auto Lab</span>
+          <Logo src={logo} alt="Logo" />
+          <span className="span">Elite Auto Lab</span>
         </div>
-<div className="right">
-        {/* Navigation Links */}
-        <NavLinks>
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-          <a href="#faq">FAQ</a>
-        </NavLinks>
+        <div className="right">
+          {/* Navigation Links */}
+          <NavLinks>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#faq">FAQ</a>
+          </NavLinks>
 
-        {/* Contact Information */}
-        <ContactInfo>
-          <FaPhoneAlt className="icon" />
-          <span>03212240843</span>
-        </ContactInfo>
+          {/* Contact Information */}
+          <ContactInfo>
+            <FaPhoneAlt className="icon" />
+            <span>03212240843</span>
+          </ContactInfo>
         </div>
 
       </SecondHeader>
-    </>
+    </mainContainer>
   );
 }
 
