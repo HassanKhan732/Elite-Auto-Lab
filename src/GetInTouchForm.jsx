@@ -15,23 +15,27 @@ const GetInTouchForm = () => {
     additionalInfo: "",
   });
 
+
+
+
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     alert("Form Submitted Successfully!");
-    console.log(formData);
-  };
+    console.log(formData)
 
+  };
+  
   return (
     <MainContainer>
       <Heading>Get in <span>Touch</span></Heading>
 
       <FormContainer>
         <form onSubmit={handleSubmit}>
-          
+
           <Select name="service" value={formData.service} onChange={handleChange} required>
             <option value="">Select a Service</option>
             <option value="Ceramic Coating">Ceramic Coating</option>

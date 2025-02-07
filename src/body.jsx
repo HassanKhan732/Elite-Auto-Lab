@@ -21,7 +21,7 @@ const Body = () => {
             <img src={Img1} alt="" />
           </div>
         </div>
-      </Container>   
+      </Container>
     </>
   );
 };
